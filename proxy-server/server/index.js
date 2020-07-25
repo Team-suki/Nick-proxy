@@ -12,8 +12,8 @@ app.use((req, res, next) => {
 const rewardsServiceRoute =
   'http://ec2-18-225-33-61.us-east-2.compute.amazonaws.com:3001';
 
-const campaignServiceRoute =
-  'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/';
+// const campaignServiceRoute =
+//   'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/';
 
 const updateServiceRoute =
   'http://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001';
@@ -28,9 +28,9 @@ const proxyRouter = {
   'api/update': updateServiceRoute,
   'api/comment': updateServiceRoute,
 
-  'api/story': campaignServiceRoute,
-  'api/RisksAndChallenges': campaignServiceRoute,
-  'api/EnvironmentalCommitments': campaignServiceRoute,
+  // 'api/story': campaignServiceRoute,
+  // 'api/RisksAndChallenges': campaignServiceRoute,
+  // 'api/EnvironmentalCommitments': campaignServiceRoute,
 
   'api/projects': rewardsServiceRoute,
   'api/rewards': rewardsServiceRoute,
