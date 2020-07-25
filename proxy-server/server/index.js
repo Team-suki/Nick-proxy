@@ -7,14 +7,23 @@ const app = express();
 const rewardsServiceRoute =
   'http://ec2-18-225-33-61.us-east-2.compute.amazonaws.com:3001';
 
+const campaignServiceRoute =
+  'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/';
+
+const updateServiceRoute =
+  'https://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001';
+
+const videoServiceRoute =
+  'http://sdc-lb-679578692.us-west-1.elb.amazonaws.com/';
+
 const proxyRouter = {
   '/api/banner': 'http://localhost:3002',
-  'api/video': 'http://localhost:3002',
-  'api/update': 'http://localhost:3001',
-  'api/comment': 'http://localhost:3001',
-  'api/story': 'http://localhost:3003',
-  'api/RisksAndChallenges': 'http://localhost:3003',
-  'api/EnvironmentalCommitments': 'http://localhost:3003',
+  'api/video': videoServiceRoute,
+  'api/update': updateServiceRoute,
+  'api/comment': updateServiceRoute,
+  'api/story': campaignServiceRoute,
+  'api/RisksAndChallenges': campaignServiceRoute,
+  'api/EnvironmentalCommitments': campaignServiceRoute,
   'api/projects': rewardsServiceRoute,
   'api/rewards': rewardsServiceRoute,
 };
