@@ -5,7 +5,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 const rewardsServiceRoute =
-  'http://ec2-3-133-92-215.us-east-2.compute.amazonaws.com:3005';
+  'http://ec2-18-225-33-61.us-east-2.compute.amazonaws.com:3001';
 
 const proxyRouter = {
   '/api/banner': 'http://localhost:3002',
