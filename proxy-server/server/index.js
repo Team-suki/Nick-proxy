@@ -16,19 +16,22 @@ const campaignServiceRoute =
   'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/';
 
 const updateServiceRoute =
-  'https://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001';
+  'http://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001';
 
-const videoServiceRoute =
-  'http://sdc-lb-679578692.us-west-1.elb.amazonaws.com/';
+const bannerServiceRoute =
+  'http://sdc-lb-679578692.us-west-1.elb.amazonaws.com';
 
 const proxyRouter = {
-  'api/banner': videoServiceRoute,
+  'api/banner': bannerServiceRoute,
   // 'api/video': videoServiceRoute,
+
   'api/update': updateServiceRoute,
   'api/comment': updateServiceRoute,
+
   'api/story': campaignServiceRoute,
   'api/RisksAndChallenges': campaignServiceRoute,
   'api/EnvironmentalCommitments': campaignServiceRoute,
+
   'api/projects': rewardsServiceRoute,
   'api/rewards': rewardsServiceRoute,
 };

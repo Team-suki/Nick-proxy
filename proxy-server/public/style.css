@@ -46,9 +46,9 @@
   height: 100%;
 }
 
-#update {
-  display: none;
-}
+/* #update {
+  display: t;
+} */
 
 #modal-root {
   position: absolute;
