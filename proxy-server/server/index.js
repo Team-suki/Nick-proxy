@@ -4,6 +4,11 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 const rewardsServiceRoute =
   'http://ec2-18-225-33-61.us-east-2.compute.amazonaws.com:3001';
 
