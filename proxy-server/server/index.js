@@ -22,8 +22,8 @@ const videoServiceRoute =
   'http://sdc-lb-679578692.us-west-1.elb.amazonaws.com/';
 
 const proxyRouter = {
-  '/api/banner': videoServiceRoute,
-  'api/video': videoServiceRoute,
+  'api/banner': videoServiceRoute,
+  // 'api/video': videoServiceRoute,
   'api/update': updateServiceRoute,
   'api/comment': updateServiceRoute,
   'api/story': campaignServiceRoute,
